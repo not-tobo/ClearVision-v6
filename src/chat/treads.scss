@@ -1,25 +1,28 @@
 /* TREADS */
-.container-1PloNW {
+//Temporary addition to attempt to fix bug
+%threadContainer{
     background: rgba(0,0,0,.3);
     border: 2px solid $main-color;
     &:hover {
         background: rgba(0,0,0,.3);
         border: 2px solid var(--hover-color);
     }
-    &.isOpen-O7ANQc {
+    //Temporary addition to attempt to fix bug
+    &%threadOpen {
         background-color: hsla(0,0%,100%,0.1);
         border-color: $main-color;
     }
 }
-.contentPreview-3fWiuC {
+//Temporary addition to attempt to fix bug
+%threadContentPreview {
 	background-color: hsla(0,0%,100%,0.05);
 	border-color: hsla(0,0%,100%,0.09);
 }
 
 // CHAT
-.container-3XgAHv {
+%threadChat {
     background: transparent;
 }
-.iconWrapper-3plkqh {
+%threadIconWrapper {
     background-color: $main-color;
 }

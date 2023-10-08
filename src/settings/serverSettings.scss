@@ -104,6 +104,10 @@
 %guildSettingsRoleIconPreview {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
+%guildSettingsRoleUpsell,
+%guildSettingsRoleUpsellFooter {
+  background: hsla(0, 0%, 0%, 0.3);
+}
 // View server as role selection bar
 .container-3ssFyj {
   background-color: hsla(0, 0%, 0%, 0.8);
@@ -113,10 +117,29 @@
 }
 
 // EMOJI
+%themeDark {
+  .card-2ART2V:before,
+  .emojiRemove-D9w3jo {
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+}
+.emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq {
+  color: var(--text-normal);
+  background-color: rgba(255,255,255,.07);
+  border: none;
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
+}
+.emojiAliasPlaceholder-3oShSx {
+  padding-top: 5px;
+  padding-left: 7px;
+}
 
 // STICKERS
 %stickersUploadCard {
   background-color: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %stickersTierLock {
   color: #fff;
@@ -126,6 +149,9 @@
 // SAFETY SETUP
 .clickableContainer-3YtEIY {
   background-color: hsla(0, 0%, 0%, .4);
+}
+.backgroundModifierContainer-WjXgb2:hover:not(.disabled-3Q7kTN):not(.noAction-3PygTY) {
+	background:rgba(0,0,0,.2);
 }
 
 // AUTOMOD
@@ -153,9 +179,11 @@
 .actionTextHeader-yeCKjC {
 	color: hsla(0, 0%, 100%, .9) !important;
 }
+.stepperContainer-i-z0pP,
 .stepCountIcon-1A2Rxd {
 	background-color: hsla(0, 0%, 100%, .1);
 }
+.mentionLimitContainer-zBzr5i,
 .keywordListContainer-9ux8nU,
 .actionContainer-2krsiT {
 	background-color: hsla(0, 0%, 0%, .4);
@@ -355,90 +383,4 @@
 %pruneMemberMenu {
   background-color: rgba(0, 0, 0, 0.5);
   border: hsla(0, 0%, 100%, 0.07);
-}
-
-// APP DIRECTORY
-%directoryContainer {
-  background: transparent !important;
-  &:before {
-    content: '';
-    @include stretch;
-    position: fixed;
-    z-index: -1;
-    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
-    @include filters(cv('bg.app'));
-  }
-  &:after {
-    content: '';
-    @include stretch;
-    position: fixed;
-    z-index: -1;
-    background: cv('bg.app.overlay');
-  }
-}
-%directoryCategory,
-// 1st recommended app card
-%directoryCard {
-  background: rgba(0,0,0,.3);
-  &:hover {
-    background: $hover-color;
-  }
-}
-// list cards
-%directoryListCard {
-  background: rgba(0,0,0,.3);
-}
-// list cards hover
-%directoryCardClickable%directoryListCard:hover {
-  background: $hover-color;
-}
-// new to apps card
-%directoryFooter {
-  background: rgba(0,0,0,.3);
-}
-%themeDark {
-  %directorySearchBar {
-    background-color: hsla(0, 0%, 0%, 0.3) !important;
-    border: none;
-    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.1);
-    margin-top: 2px;
-    &:focus-within {
-      box-shadow: 0 0 2px 2px $main-color;
-      transition: all 0.15s ease-in-out;
-    }
-    %directorySearchBarInput {
-      color: #fff;
-      box-shadow: none;
-      &::placeholder {
-        color: hsla(0, 0%, 100%, 0.3);
-      }
-    }
-  }
-}
-
-%directoryAppIcon {
-	border: 7px solid transparent;
-	background: transparent;
-}
-/*side categories*/
-%directoryAppCategory {
-	background: var(--main-color);
-}
-/*side support server card*/
-%directoryAppSupportServer,
-/*privacy -> permissions container, data access*/
-%directoryAppPermissionList,
-%directoryAppIntentList,
-/*premium -> subscriptions*/
-%directoryPremiumCardHeader, 
-%directoryAppPremiumContainer {
-	background: rgba(0,0,0,.5);
-}
-/*general -> popular slash commands container*/
-%directoryAppCommandList {
-	background: rgba(0,0,0,.5);
-  %directoryAppCommand {
-    background: transparent;
-    border: 1px solid var(--main-color);
-  }
 }

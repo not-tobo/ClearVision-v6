@@ -16,8 +16,7 @@
     font-family: cv('font.main');
     font-weight: 600;
     text-shadow: 0 0 3px #000;
-    &:hover,
-    %channelsHeaderSelected & {
+    &:hover {
       background-color: hsla(0,0%,100%,.1);
     }
   }
@@ -38,23 +37,13 @@
   %threadChannelSpine {
     background: $main-color;
   }
-
-  // GUILD BADGE
-  %channelsHeaderContainer {
-    %flowerStarContainer {
-      color: $main-color;
-    }
-    %flowerStarChild>svg {
-      color: #fff;
-    }
-  }
 }
 
 // CHANNEL CONTENT
-%channelContent {
+%channelLink {
   transition: all 0.15s ease-in-out;
 }
-%channelContent {
+%channelLink {
   position: relative;
   background: transparent !important;
   &:before {
@@ -110,11 +99,16 @@
 %channelWrapper {
   // HOVER
   &:hover {
-    %channelContent {
+    %channelName,
+    %channelIcon {
+      color: #fff;
+    }
+    %channelLink {
+      background: var(--bg-overlay-hover,var(--background-modifier-hover));
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
       }
-      %channelMain {
+      %channelLinkTop {
         %channelContainerDefault & {
           %channelIcon,
           %channelName {
@@ -126,8 +120,8 @@
   }
   // UNREAD
   &%channelWrapperUnread {
-    %channelContent {
-      %channelMain {
+    %channelLink {
+      %channelLinkTop {
         %channelName {
           color: var(--channel-unread);
           text-shadow: 0 0 3px;
@@ -140,8 +134,8 @@
       }
     }
     &:hover {
-      %channelContent {
-        %channelMain {
+      %channelLink {
+        %channelLinkTop {
           %channelName {
             color: var(--channel-text-selected);
           }
@@ -154,7 +148,11 @@
   }
   // SELECTED
   &%channelWrapperSelected {
-    %channelContent {
+    %channelName,
+    %channelIcon {
+      color: #fff;
+    }
+    %channelLink {
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
       }
@@ -187,8 +185,8 @@
 
   // CONNECTED
   &%channelWrapperConnected {
-    %channelContent {
-      %channelMain {
+    %channelLink {
+      %channelLinkTop {
         %channelName {
           color: $main-color;
           text-shadow: 0 0 3px;
@@ -202,8 +200,8 @@
   }
   // MUTED
   &%channelWrapperMuted {
-    %channelContent {
-      %channelMain {
+    %channelLink {
+      %channelLinkTop {
         %channelIcon,
         %channelName {
           color: var(--muted-color);
@@ -211,8 +209,8 @@
       }
     }
     &:hover {
-      %channelContent {
-        %channelMain {
+      %channelLink {
+        %channelLinkTop {
           &:before {
             background: hsla(0, 0%, 100%, 0.07);
           }
@@ -320,9 +318,14 @@
     color: #fff !important;
   }
 }
-%audienceVoiceUserIconContainer {
-  background-color: $main-color;
-  color: #fff;
+%voiceChannelsButton {
+  &:hover {
+    background: $hover-color;
+    transition: ease-in-out .15s;
+  }
+  > %textSmallMedium {
+    color: #fff;
+  }
 }
 
 // USER SUMMARY
@@ -354,3 +357,4 @@
     opacity: 0.1;
   }
 }
+
