@@ -23,15 +23,19 @@
 .app_b1f720 {
   @extend %app !optional;
 }
+.app_de4237, /*Canary Fix*/
 .app__00c92 {
   @extend %shakeable !optional;
 }
+.bg__12180, /*Canary FIx*/
 .bg__7adbf {
   @extend %bg !optional;
 }
+.layers__1c917, /*Canary Fix*/
 .layers_a40797 {
   @extend %layers !optional;
 }
+.layer__2efaa, /*Canary Fix*/
 .layer_e552e0 {
   @extend %layer !optional;
 }
@@ -741,7 +745,7 @@
 .content_d67847 {
   @extend %dividerDate !optional;
 }
-header_f7f1f3 {
+.header_f7f1f3 {
   @extend %gifPickerHeader !optional;
 }
 .searchBar__3b162 {
@@ -2430,35 +2434,26 @@ pre {
 .pageWrapper_fef757 {
   @extend %pageWrapper !optional;
 }
-.pageHeader-3615mp {
-  @extend %pageHeader !optional;
-}
-.body-2lagau {
-  @extend %pageBody !optional;
-}
-.searchPage-1Rxeav {
-  @extend %searchPage !optional;
-}
-.search-25t1e9 {
-  @extend %search !optional;
+.search_e47903 {
+  @extend %discoverSearch !optional;
 }
 .searchBox_a63854 {
-  @extend %searchBox !optional;
+  @extend %discoverSearchBox !optional;
 }
 .searchPageBox__56275 {
-  @extend %searchPageBox !optional;
+  @extend %discoverSearchPageBox !optional;
 }
 .searchBoxInput__73c9c {
-  @extend %searchBoxInput !optional;
+  @extend %discoverSearchBoxInput !optional;
 }
 .searchIcon_e60ea8 {
-  @extend %searchBoxIconSearch !optional;
+  @extend %discoverSearchBoxIconSearch !optional;
 }
 .clearIcon__91449 {
-  @extend %searchBoxClearIcon !optional;
+  @extend %discoverSearchBoxClearIcon !optional;
 }
 .closeIcon-BMGxx0 {
-  @extend %searchBoxCloseIcon !optional;
+  @extend %discoverSearchBoxCloseIcon !optional;
 }
 .categoryItem_b1be5c {
   @extend %discoverCategoryItem !optional;
@@ -2745,35 +2740,23 @@ pre {
 .container-3cGP6G {
   @extend %messageOptions !optional;
 }
-.item-2J1YMK {
-  @extend %popoutItem !optional;
-}
-.noShadow-3pu20z {
-  @extend %popoutNoShadow !optional;
-}
-.layerContainer-2v_Sit {
+.layerContainer_d5a653 {
   @extend %layerContainer !optional;
 }
-.layer-2aCOJ3 {
+.layer_ec16dd {
   @extend %popoutLayer !optional;
 }
-.translate-PeW1wK {
-  @extend %popoutTranslate !optional;
-}
-.animatorTop-3ltI52 {
+.animatorTop__609e7 {
   @extend %popoutAnimatorTop !optional;
 }
-.animatorBottom-L63-7D {
+.animatorBottom_b2d32e {
   @extend %popoutAnimatorBottom !optional;
 }
-.animatorLeft-3yvG13 {
+.animatorLeft_b2289c {
   @extend %popoutAnimatorLeft !optional;
 }
-.animatorRight-xAUgTY {
+.animatorRight__5895e {
   @extend %popoutAnimatorRight !optional;
-}
-.didRender-2SiRlm {
-  @extend %popoutAnimatorDidRender !optional;
 }
 .input_f4043f {
   @extend %popoutInput !optional;
@@ -4323,6 +4306,9 @@ pre {
 }
 .smallDecorationPreviewsContainer_c0deb8 {
   @extend %avatarDecoPreviewSmall !optional;
+}
+.statusDot__468f8 {
+  @extend %userProfileStatus !optional;
 }
 .shop_b31ed2 {
   @extend %shop !optional;
