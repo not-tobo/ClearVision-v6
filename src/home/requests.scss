@@ -1,11 +1,11 @@
 %messageReq, //main tab
 %messageReqSpam, //spam
-%messageReqItem.active-1iRyqF, 
+%messageReqItem.active_a36bbb, 
 %messageReqItem:hover {
-    background: $hover-color;
-	animation: cv-fade-to-8 0.3s ease-in-out;
+  background: $hover-color;
+  animation: cv-fade-to-8 0.3s ease-in-out;
 }
 /*was it spam*/
 %messageReqSpamCheck {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
 }
