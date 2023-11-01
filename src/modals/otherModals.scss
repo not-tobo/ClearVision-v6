@@ -92,7 +92,7 @@
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
 }
 .cardInputFocused-31lFD1 {
-  box-shadow: 0 0 2px 2px var(--main-color);
+  box-shadow: 0 0 2px 2px $main-color;
 }
 .paymentModalContent {
   background-color: transparent;
@@ -133,22 +133,10 @@
   background-color: var(--offline-color);
 }
 
-// INVITE MODAL
-%inviteModalRow:hover {
-  background-color: rgba(255, 255, 255, 0.07);
-}
-%themeDark %inviteModalUpsell {
-  background-color: transparent;
-}
-%inviteModalTemporary {
-  background: rgba(0, 0, 0, 0.07);
-}
-
 // TIMEOUT
 %themeDark .item-2OyinQ:hover {
-  background-color: var(--hover-color);
+  background-color: $hover-color;
 }
-
 .selectorButtonSelected-1VZ6hz {
   background-color: $main-color;
 }
@@ -157,20 +145,18 @@
 .tips-39ZVzW {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-
-// SWITCH ACCOUNT
-%manageAccountsList {
-  background-color: rgba(0, 0, 0, .5);
-}
+// SWITCH ACCOUNTS
 .activeIcon_e452f7 > circle:not([fill^='hsl(0']),
 .activeIcon_e452f7 > g > path:not([fill^='hsl(0']) {
-  fill: var(--main-color);
+  fill: $main-color;
 }
-// ADD ACCOUNT
-%themeDark %addAccountAuthBox,
-%themeDark %addAccountNavRow {
-  background-color: rgba(0, 0, 0, .5);
+%themeDark %modalRoot {
+  %loginAuthBox,
+  %addAccountFooter {
+    background-color: transparent;
+  }
 }
+
 // VERIFY PHONE
 %phoneVerification %phoneVerificationInput {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -190,10 +176,11 @@
 }
 %activityItem {
   background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
   &:hover {
-    background: $hover-color;
+    background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    border: 2px solid $main-color;
+    border: 2px solid $hover-color;
   }
 }
 %activitiesScroller {

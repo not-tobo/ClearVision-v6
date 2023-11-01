@@ -37,14 +37,6 @@
       border-radius: 0;
     }
   }
-  // MESSAGE JUMP
-  > div[style^='border-radius: 2px;'] {
-    &[style$='0);'] {
-      animation: none;
-    }
-    border-radius: 3px !important;
-    animation: cv-message-jump 2s ease-in-out;
-  }
 }
 // GIFS/EMBEDS
 %messageInlineMediaEmbed {
@@ -116,10 +108,10 @@
   }
 }
 %threadJumpButton {
-  background-color: var(--main-color);
+  background-color: $main-color;
   color: #fff;
   &:hover {
-    background-color: var(--hover-color);
+    background-color: $hover-color;
     color: #fff;
   }
 }
@@ -141,7 +133,7 @@
 %themeDark %operations {
   color: hsla(0, 0%, 100%, 0.5);
   > a {
-    color: var(--main-color);
+    color: $main-color;
   }
 }
 
@@ -151,7 +143,7 @@
     background-color: hsla(0, 0%, 100%, 0.08);
   }
   &:before {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
 }
 

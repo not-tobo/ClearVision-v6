@@ -194,7 +194,7 @@
   border: none;
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   &:focus {
-    box-shadow: 0 0 2px 2px var(--main-color);
+    box-shadow: 0 0 2px 2px $main-color;
   }
   &::placeholder {
     color: hsla(0, 0%, 100%, 0.3);
@@ -373,13 +373,3 @@
 }
 
 // MEMBERS
-%pruneMemberMenuDropdown {
-  background: var(--hover-color);
-  &:hover {
-    background: var(--hover-color);
-  }
-}
-%pruneMemberMenu {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: hsla(0, 0%, 100%, 0.07);
-}

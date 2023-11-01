@@ -1,50 +1,72 @@
 /* ADD SERVER MODAL */
-%themeLight {
-  .defaultColor__87d87 {
-    color: #fff;
-  }
-  .subtitle-3m-md1,
-  .subtitle-bIoUVX,
-  .optionHeader-27AHfD {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-  .iconContainer-GFfNaA > svg > circle {
-    fill: $main-color;
-  }
-  .sampleLink-5BWNy9 {
-    color: $main-color;
-    font-weight: 500;
-  }
-  %buttonLinkPrimary {
-    color: hsla(0, 0%, 100%, 0.7);
-  }
-  .skip-2hTIXL {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-}
 
-// SERVER TEMPLATES
-.container-x8Y1ix {
+// MAIN PAGE
+%themeLight {
+  %addServerContainer {
+    %defaultColor {
+      color: #fff;
+    }
+    %addServerSubtitle {
+      color: hsla(0, 0%, 100%, 0.7) !important;
+    }
+  }
+  
+}
+%addServerOption {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .text-PdAsFQ {
+  %addServerOptionText {
     color: #fff;
   }
-  .arrow-2yY1Tm {
+  %addServerOptionArrow{
     filter: brightness(0) invert(1);
   }
 }
-.rowContainer-3t7486 {
+
+// CREATE SERVER
+%themeLight {
+  .subtitle_a75f7f,
+  .optionHeader-27AHfD {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  .iconContainer_cd2671 > svg > circle {
+    fill: $main-color;
+  }
+  .skip_f687eb {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+}
+.backButton__576ea {
+  %buttonContents {
+    color: hsla(0, 0%, 100%, .7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+// JOIN SERVER
+%themeLight {
+  .input__0c269 {
+    background-color: transparent;
+  }
+  .sampleLink__771c4 {
+    color: $main-color;
+    font-weight: 500;
+  }
+}
+.rowContainer__6f4c6 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .rowText-3MQqQi {
+  .rowText_e87737 {
     color: #fff;
   }
-  .rowArrow-TIwwIc {
+  .rowArrow_d97795 {
     filter: brightness(0) invert(1);
   }
 }
