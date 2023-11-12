@@ -32,14 +32,21 @@
   color: #fff;
 }
 
+// BE THE FIRST TO START A CONVERSATION
+%forumFirstIcon {
+  background: $main-color;
+}
+
 // GET STARTED
 %forumSetupContainer {
 	background-color: hsla(0, 0%, 0%, 0.4);
 }
 %forumSetupStepContainer {
 	background-color: hsla(0, 0%, 100%, 0.07);
+  border: 2px solid $main-color;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.09);
+    border: 2px solid $hover-color;
   }
 }
 %forumSetupStepStatus {
@@ -69,20 +76,19 @@
 }
 
 // LIST VIEW
-%forumListContainer,
-%forumIncreasedCard {
-  background: hsla(0, 0%, 0%, 0.3);
-  border: 2px solid $main-color;
-  &:hover {
+%themeDark {
+  %forumListContainer,
+  %forumIncreasedCard {
     background: hsla(0, 0%, 0%, 0.3);
-    border: 2px solid $hover-color;
-  }
-  &%forumListOpen {
-    background: hsla(0, 0%, 0%, 0.3);
-  }
-  %themeDark &%forumOpenCard, // another temporary addition
-  %themeDark &%forumIncreasedOpenCard {
-    background-color: hsla(0, 0%, 100%, 0.1);
+    border: 2px solid $main-color;
+    &:hover {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid $hover-color;
+    }
+    &%forumListOpen {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid var(--success-color);
+    }
   }
 }
 // fix the increased view's new reply feature
@@ -213,17 +219,6 @@
 }
 
 // admin/creation
-%forumGetStartedContainer {
-  background: hsla(0, 0%, 0%, 0.3);
-  %forumGetStartedStep {
-    background: hsla(0, 0%, 0%, 0.3);
-    border: 2px solid $main-color;
-    &:hover {
-      background: hsla(0, 0%, 0%, 0.3);
-      border: 2px solid $hover-color;
-    }
-  }
-}
 %themeDark %forumSettingsGuidelinesToolbar {
   background: hsla(0, 0%, 0%, 0.6);
   > %channelTextArea {
