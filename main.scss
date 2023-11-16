@@ -69,6 +69,7 @@ $version: '6.3.0';
 // HOME
 @import 'src/home/friends';
 @import 'src/home/library';
+@import 'src/home/nitro';
 @import 'src/home/requests';
 
 // MEMBERS
@@ -137,10 +138,10 @@ $version: '6.3.0';
 @import 'src/settings/channelSettings';
 @import 'src/settings/content';
 @import 'src/settings/icons';
+@import 'src/settings/onboarding';
 @import 'src/settings/serverSettings';
 @import 'src/settings/sidebar';
 @import 'src/settings/userSettings';
-@import 'src/settings/nitro';
 
 // USERS
 @import 'src/users/activity';
