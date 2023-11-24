@@ -264,7 +264,7 @@
 .wrapper__7bcde {
   @extend %channelWrapper !optional;
 }
-.modeUnread_f74c03 {
+.modeUnreadImportant_efb53e {
   @extend %channelWrapperUnread !optional;
 }
 .modeSelected__487d6 {
@@ -4379,7 +4379,8 @@ pre {
 .chatHeaderBar__28ee6 {
   @extend %channelHeaderBar !optional;
 }
-.mainTableContainer__5ffe0 {
+.mainTableContainer_ea650e, // this is the one in the server settings
+.mainTableContainer__5ffe0 { // and this is the one in the channel. why are there 2??
   @extend %membersChannelContainer !optional;
 }
 .table_a843c4 {
