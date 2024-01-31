@@ -43,6 +43,9 @@
 .backdrop__7e89b {
   @extend %backdrop !optional;
 }
+.withLayer__1fe9d {
+  @extend %backdropWithLayer !optional;
+}
 .notice__5fd4c {
   @extend %notice !optional;
 }
@@ -986,6 +989,12 @@
 .numberBadge__50328 {
   @extend %numberBadge !optional;
 }
+.base__92a12 {
+  @extend %numberBadgeBase !optional;
+}
+.baseShapeRound__95d0f {
+  @extend %numberBadgeBaseShapeRound !optional;
+}
 .textBadge__45d79 {
   @extend %textBadge !optional;
 }
@@ -1280,6 +1289,9 @@
 .blobContainer__5ee50 {
   @extend %guildContainer !optional;
 }
+.wrapper__3670f {
+  @extend %guildPillWrapper !optional;
+}
 .pill__6b31b {
   @extend %guildPill !optional;
 }
@@ -1294,6 +1306,12 @@
 }
 .icon__0cbed {
   @extend %guildIcon !optional;
+}
+.wrapper__3af0b {
+  @extend %guildSVGWrapper !optional;
+}
+.svg_ad7356 {
+  @extend %guildSVG !optional;
 }
 .childWrapper__01b9c {
   @extend %guildChildWrapper !optional;
@@ -3933,6 +3951,12 @@ pre {
 .tileContainer__88d69 {
   @extend %stageParticipant !optional;
 }
+.toast__4a149 {
+  @extend %stageMessageToast !optional;
+}
+.messageContentWrapper__72f89 {
+  @extend %stageMessageToastWrapper !optional;
+}
 .topicFormItem_dc6100 {
   @extend %stageTopicForm !optional;
 }
@@ -3956,6 +3980,15 @@ pre {
 }
 .separator_c99b23 {
   @extend %stageSeparator !optional;
+}
+.voiceUser__0470a {
+  @extend %stageVoiceUser !optional;
+}
+.overlap_c76e16 {
+  @extend %stageVoiceUserOverlap !optional;
+}
+.avatar_a56eee {
+  @extend %stageVoiceUserAvatar !optional;
 }
 .audienceContainer_d4eada {
   @extend %stageAudienceContainer !optional;
@@ -4301,6 +4334,9 @@ pre {
 }
 .unreadMentionsIndicatorTop_ada847 {
   @extend %guildUnreadMentionsTop !optional;
+}
+.unreadMentionsIndicatorBottom_fdb943 {
+  @extend %guildUnreadMentionsBottom !optional;
 }
 .authBox__7196a {
   @extend %loginAuthBox !optional;
@@ -5104,4 +5140,22 @@ pre {
 }
 .banReasonOtherClickable_e4b932 {
   @extend %banReasonOther !optional;
+}
+.channelRow_bba4a8 {
+  @extend %recommendedDeafultChannels !optional;
+}
+.selectableChannelRow_c40337:hover {
+  @extend %updateChannelPermissionsItems !optional;
+}
+.deprivateTableBody_dbf647 {
+  @extend %updateChannelPermissionsMenu !optional;
+}
+.suggestedChannels__158f9 {
+  @extend %recommendedReadOnly !optional;
+}
+.container__25f89 {
+  @extend %pickAnEmoji !optional;
+}
+.searchRowLabel_b64d40 {
+  @extend %enterRoles !optional;
 }
