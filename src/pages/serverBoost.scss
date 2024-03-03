@@ -26,3 +26,16 @@
 %serverBoostPageBodyWave > path {
   fill: rgba(0, 0, 0, 0.8) !important;
 }
+
+// Boost this server
+// TODO: Add to selectors
+%boosServerPerkRow {
+  border-bottom: 1px solid var(--main-color);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+
+%boostServerPerks {
+  background-color: rgba(0, 0, 0, 0.4);
+}

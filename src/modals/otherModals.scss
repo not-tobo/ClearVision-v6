@@ -238,3 +238,21 @@
     background: var(--background-overlay);
   }
 }
+
+// Webhook previews
+%webhookFooter {
+  background-color: transparent;
+}
+
+%themeDark %webhookPopout {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+%webhookEmojiRow {
+  background-color: var(--main-color);
+  color: var(--text-normal) !important;
+}
+
+%webhookBackground {
+  background: var(--background-overlay);
+}

@@ -40,3 +40,25 @@
 %serverShopSelected {
   background: $main-color;
 }
+
+// Nitro Home shop                                 
+%nitroShopCard {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-color: var(--main-color) !important;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-color: var(--hover-color) !important;
+  }
+}
+
+%nitroShopCardBackground%nitroShopCardDarkBackground  {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+%nitroShopBackground {
+  background-color:  rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+
+%nitroShopBackgroundPrime {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}

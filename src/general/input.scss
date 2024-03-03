@@ -23,4 +23,8 @@
     box-shadow: none;
     background: none;
   }
+  %inputCopy & {
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
