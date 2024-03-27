@@ -3,6 +3,12 @@
 %shop {
   background-color: transparent;
 }
+%shopBackground {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+%shopPageWrapper {
+  background-color: transparent;
+}
 
 // LOADING
 %shopLoadingSkeleton {
@@ -16,7 +22,20 @@
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
-// CONTENT
+// CARD
+%shopCard {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-color: $main-color !important;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-color: $hover-color !important;
+  }
+}
+%shopCardDarkBackground {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+// PREVIEW
 %shopChatPreview {
   left: 0;
   bottom: 0;
@@ -41,24 +60,23 @@
   background: $main-color;
 }
 
-// Nitro Home shop
-%nitroShopCard {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  border-color: var(--main-color) !important;
+// Buy Nitro
+%nitroShopGiftNitro {
+  color: var(--text-normal) !important;
+  background-color: $main-color !important;
+  border-color: transparent !important;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-    border-color: var(--hover-color) !important;
+    background-color: $hover-color !important;
+    color: var(--text-normal) !important;
   }
 }
 
-%nitroShopCardBackground%nitroShopCardDarkBackground {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-%nitroShopBackground {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
-}
-
-%nitroShopBackgroundPrime {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+// Subscribe button
+%buttonInverted%buttonColorBrand {
+  background: $main-color;
+  color: var(--text-normal);
+  &:hover {
+    background: $hover-color;
+    color: var(--text-normal);
+  }
 }

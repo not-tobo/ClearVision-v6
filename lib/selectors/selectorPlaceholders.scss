@@ -360,15 +360,6 @@
 .headerButton__3af9f {
   @extend %channelsHeaderButton !optional;
 }
-.guildIconContainer_a995c7 {
-  @extend %channelsHeaderGuildBadge !optional;
-}
-.partnered__77913 {
-  @extend %guildPartnered !optional;
-}
-.verified__8167d {
-  @extend %guildVerified !optional;
-}
 .animatedContainer__341f6 {
   @extend %bannerAnimatedContainer !optional;
 }
@@ -618,7 +609,7 @@
 .centerIcon__6075a {
   @extend %callCenterIcon !optional;
 }
-.slash_c0ba36 {
+.slash__858f6 {
   @extend %micSlash !optional;
 }
 .colorable_c84c4c {
@@ -930,6 +921,15 @@
 .optionPillKey_e84f41 {
   @extend %autocompleteOptionPillKey !optional;
 }
+.nitroTopDividerContainer__4c8fd {
+  @extend %autocompleteUpsellDividerContainer !optional;
+}
+.premiumEmoji__2dbd7 {
+  @extend %autocompleteUpsellEmoji !optional;
+}
+.premiumHeader_f78f97 {
+  @extend %autocompleteUpsellHeader !optional;
+}
 .spamBanner_adb1b9 {
   @extend %timeoutBar !optional;
 }
@@ -1109,6 +1109,9 @@
 }
 .gameVerifiedIcon_bcd5fc {
   @extend %gameVerifiedIcon !optional;
+}
+.redesignIconChildContainer__1bee6 {
+  @extend %guildIconChildContainer !optional;
 }
 .scrollerWrap_e0b973 {
   @extend %scrollerWrap !optional;
@@ -1452,11 +1455,20 @@
 .backButton__6a1f0 {
   @extend %headerSearchBackButton !optional;
 }
+.input__321f5 {
+  @extend %headerChannelNameInput !optional;
+}
+.outer_c57160 {
+  @extend %headerChannelNameOuter !optional;
+}
 .applicationStore_fc7d76 {
   @extend %nitro !optional;
 }
-.mainPageScroller__12afb {
+.scroller_a1aadd {
   @extend %nitroScroller !optional;
+}
+.mainPageScroller__12afb {
+  @extend %nitroPremiumScroller !optional;
 }
 .card_e97590 {
   @extend %nitroCard !optional;
@@ -1464,14 +1476,8 @@
 .cardDescription__46c9d {
   @extend %nitroCardDescription !optional;
 }
-.perkCard__6fe60 {
-  @extend %nitroPerkCard !optional;
-}
-.customButton_c0cc97 {
-  @extend %nitroExpandButton !optional;
-}
-.cover__590cf {
-  @extend %nitroPerksCover !optional;
+.seeAllPerksButton_c90d04 {
+  @extend %nitroSeePerksButton !optional;
 }
 .giftNitro__7b37a {
   @extend %nitroGiftContainer !optional;
@@ -1481,6 +1487,34 @@
 }
 .innerWrapper_c80bad {
   @extend %nitroFooterInnerWrapper !optional;
+}
+.allPerksScroller__8740f {
+  @extend %nitroPerksScroller !optional;
+}
+.open__0960c {
+  @extend %nitroPerksScrollerOpen !optional;
+}
+.backButton__5b790 {
+  @extend %nitroPerksBackButton !optional;
+}
+.leftArrow__1d2d5,
+.rightArrow__0633c {
+  @extend %nitroPerksArrows !optional;
+}
+.inactiveArrow_e0ef05 {
+  @extend %nitroPerksArrowInactive !optional;
+}
+.arrowIcon_c86bb8 {
+  @extend %nitroPerksArrowIcon !optional;
+}
+.cardProgressBar__0e60a {
+  @extend %nitroPerksProgressBar !optional;
+}
+.dot__5c7fb {
+  @extend %nitroPerksProgressDot !optional;
+}
+.selectedDot__3f4ad {
+  @extend %nitroPerksProgressDotSelected !optional;
 }
 .topPill__0cdf1 {
   @extend %topPill !optional;
@@ -2056,6 +2090,9 @@ pre {
 .playButtonContainer_d887d6 {
   @extend %voiceMessagePlayButtonContainer !optional;
 }
+.playIcon_e14cf9 {
+  @extend %voiceMessagePlayButtonIcon !optional;
+}
 .ripple__74f0d {
   @extend %voiceMessagePlayingRipple !optional;
 }
@@ -2116,8 +2153,14 @@ pre {
 .timestamp_cdbd93.alt__6c563 {
   @extend %messageTimestampAlt !optional;
 }
+.messageContent__21e69 {
+  @extend %messageContent !optional;
+}
 .container_aed774 {
   @extend %messageSystemContainer !optional;
+}
+.content__72fdc {
+  @extend %messageSystemContent !optional;
 }
 .tile_ebc93b {
   @extend %messageInvalidGift !optional;
@@ -2179,6 +2222,9 @@ pre {
 .anchorUnderlineOnHover__78236 {
   @extend %anchorUnderlineOnHover !optional;
 }
+.actionAnchor__584b2 {
+  @extend %anchorAction !optional;
+}
 .buttonContainer_dd4b62 {
   @extend %messageButtonContainer !optional;
 }
@@ -2233,41 +2279,14 @@ pre {
 .reaction_b90ab0 {
   @extend %reaction !optional;
 }
-.reaction_fef95b {
-  @extend %forumReaction !optional;
-}
 .reactionMe_bf6909 {
   @extend %reactionMe !optional;
-}
-.reactionMe__98f57 {
-  @extend %forumReactionMe !optional;
 }
 .reactionInner__00d5f {
   @extend %reactionInner !optional;
 }
-.reactionInner__4135b {
-  @extend %forumReactionInner !optional;
-}
 .reactionCount__60448 {
   @extend %reactionCount !optional;
-}
-.reactionCount_b49901 {
-  @extend %forumReactionCount !optional;
-}
-.addReactButton__59750 {
-  @extend %forumReactAdd !optional;
-}
-.buttonInner__2771e {
-  @extend %forumMessageButton !optional;
-}
-.active_f1266e {
-  @extend %forumFollowActive !optional;
-}
-.staticToolbar__7ef7b {
-  @extend %forumSettingsGuidelinesToolbar !optional;
-}
-.addTags_e01f9c {
-  @extend %forumSettingsGuidelinesAddTags !optional;
 }
 .spoilerMarkdownContent__2b8f8 {
   @extend %spoilerMarkdownContent !optional;
@@ -2403,6 +2422,27 @@ pre {
 }
 .actions_cba988 {
   @extend %serverBoostPaymentActions !optional;
+}
+.innerWrapper__8cde3 {
+  @extend %serverBoostPageBoostPrompt !optional;
+}
+.topPerksCard__9fc01 {
+  @extend %serverBoostPageTopPerksCard !optional;
+}
+.card__67edb {
+  @extend %serverBoostPageCard !optional;
+}
+.wrapper_cf13f4 {
+  @extend %serverBoostPageFaq !optional;
+}
+.scroller__439a2 {
+  @extend %serverBoostPageScroller !optional;
+}
+.headerWave_e4fdee {
+  @extend %serverBoostPageHeaderWave !optional;
+}
+.bodyWave__62812 {
+  @extend %serverBoostPageBodyWave !optional;
 }
 .contentWrapper__85d37 {
   @extend %webInviteModalContentWrapper !optional;
@@ -3526,6 +3566,24 @@ pre {
 .channelIcon__7901b {
   @extend %onboardingReviewIcon !optional;
 }
+.channelRow_bba4a8 {
+  @extend %onboardingRecommendedDefaultChannels !optional;
+}
+.selectableChannelRow_c40337:hover {
+  @extend %onboardingChannelPermissionsItems !optional;
+}
+.deprivateTableBody_dbf647 {
+  @extend %onboardingChannelPermissionsMenu !optional;
+}
+.suggestedChannels__158f9 {
+  @extend %onboardingRecommendedReadOnly !optional;
+}
+.container__25f89 {
+  @extend %onboardingPickAnEmoji !optional;
+}
+.searchRowLabel_b64d40 {
+  @extend %onboardingEnterRoles !optional;
+}
 .card_bc6ee2 {
   @extend %guildSettingsSubsCard !optional;
 }
@@ -3701,7 +3759,7 @@ pre {
 .giftCard__30972 {
   @extend %userSettingsNitroGiftCard !optional;
 }
-.borderRect__8ec00 {
+.borderRect__8ec00 { // OBSOLETE
   @extend %userSettingsBoostHeaderBorderRect !optional;
 }
 .header_a2ba3b {
@@ -3826,8 +3884,14 @@ pre {
 .auto_a48086 {
   @extend %scrollbarAuto !optional;
 }
+.auto__76cc7 {
+  @extend %scrollbarChatAuto !optional;
+}
 .thin_b1c063 {
   @extend %scrollbarThin !optional;
+}
+.thin__62e51 {
+  @extend %scrollbarSettingsThin !optional;
 }
 .none__51a8f {
   @extend %scrollbarNone !optional;
@@ -4141,6 +4205,9 @@ pre {
 .container__20de0 {
   @extend %inboxHeader !optional;
 }
+.calloutContainer_c0109d {
+  @extend %inboxChattingAbout !optional;
+}
 .container__8261a {
   @extend %threadsPopoutContainer !optional;
 }
@@ -4245,6 +4312,9 @@ pre {
 }
 .eventStatusLabel__4d7cc {
   @extend %eventStatusLabel !optional;
+}
+.eventStatusContainer__92035 {
+  @extend %eventIconContainer !optional;
 }
 .rsvpCount__4657d {
   @extend %eventRSVPCount !optional;
@@ -4438,9 +4508,11 @@ pre {
 .rolesList__55c4f {
   @extend %forumSetupRoleList !optional;
 }
-.title__964d5,
+.title__964d5 {
+  @extend %forumGalleryCardTitle !optional;
+}
 .postTitleText__11fd1 {
-  @extend %forumCardName !optional;
+  @extend %forumListCardTitle !optional;
 }
 .pinIcon__39b6e {
   @extend %forumPinIcon !optional;
@@ -4588,6 +4660,33 @@ pre {
 }
 .newPostsButton__760c6 {
   @extend %forumNewPosts !optional;
+}
+.reactionInner__4135b {
+  @extend %forumReactionInner !optional;
+}
+.reactionCount_b49901 {
+  @extend %forumReactionCount !optional;
+}
+.addReactButton__59750 {
+  @extend %forumReactAdd !optional;
+}
+.buttonInner__2771e {
+  @extend %forumMessageButton !optional;
+}
+.active_f1266e {
+  @extend %forumFollowActive !optional;
+}
+.staticToolbar__7ef7b {
+  @extend %forumSettingsGuidelinesToolbar !optional;
+}
+.addTags_e01f9c {
+  @extend %forumSettingsGuidelinesAddTags !optional;
+}
+.reaction_fef95b {
+  @extend %forumReaction !optional;
+}
+.reactionMe__98f57 {
+  @extend %forumReactionMe !optional;
 }
 .heading-lg-bold_c2517a {
   @extend %headingLargeBold !optional;
@@ -4776,7 +4875,7 @@ pre {
   @extend %browseChannelsDisabled !optional;
 }
 .chatHeaderBar__28ee6 {
-  @extend %channelHeaderBar !optional;
+  @extend %channelNotInList !optional;
 }
 .mainTableContainer_ea650e, // this is the one in the server settings
 .mainTableContainer__5ffe0 {
@@ -4817,7 +4916,7 @@ pre {
   @extend %avatarDecoItemSelected !optional;
 }
 .iconBadge__5fd10 {
-  @extend %avatarDecoItemBadge !optional;
+  @extend %avatarDecoItemLock !optional;
 }
 .decorationPreview_d09d2f {
   @extend %avatarDecoPreview !optional;
@@ -4825,11 +4924,38 @@ pre {
 .smallDecorationPreviewsContainer_c0deb8 {
   @extend %avatarDecoPreviewSmall !optional;
 }
+.shopPreviewContainer__15dfd {
+  @extend %avatarDecoPreviewUpsell !optional;
+}
+.effectGridItem__957b0 {
+  @extend %profileEffectItem !optional;
+}
+.selected_bfc68b {
+  @extend %profileEffectItemSelected !optional;
+}
+.lockBadge__7140f {
+  @extend %profileEffectItemLock !optional;
+}
+.effectDescriptionNoGradient__2ac4a {
+  @extend %profileEffectDescription !optional;
+}
+.effectDescriptionBorderWithGradient__33bff {
+  @extend %profileEffectDescriptionUpsell !optional;
+}
+.effectDescriptionContainer_d33b78 {
+  @extend %profileEffectDescriptionContainer !optional;
+}
 .statusDot__468f8 {
   @extend %userProfileStatus !optional;
 }
 .shop_b31ed2 {
   @extend %shop !optional;
+}
+.shopScrollBackgroundPrimary_bb1f42 {
+  @extend %shopBackground !optional;
+}
+.pageWrapperBackgroundPrimary__74f14 {
+  @extend %shopPageWrapper !optional;
 }
 .skeleton__5ac25 {
   @extend %shopLoadingSkeleton !optional;
@@ -4845,6 +4971,15 @@ pre {
 .cardDescription__435dd,
 .cardSummary__432c0 {
   @extend %shopLoadingCardContent !optional;
+}
+.shopCard_f7822b {
+  @extend %shopCard !optional;
+}
+.cardBackground_af6852 {
+  @extend %shopCardBackground !optional;
+}
+.darkCardBackground__82a32 {
+  @extend %shopCardDarkBackground !optional;
 }
 .modalContent__3d79f {
   @extend %shopModal !optional;
@@ -4948,9 +5083,6 @@ pre {
 .selected__75860 {
   @extend %channelSettingsRoleDropdownSelected !optional;
 }
-.iconContainer__6fc72 {
-  @extend %previewServerIconContainer !optional;
-}
 .defaultColor__87d87 {
   @extend %defaultColor !optional;
 }
@@ -5011,6 +5143,9 @@ pre {
 .container__60a4a {
   @extend %voiceChannelListeningIcon !optional;
 }
+.iconContainer__6fc72 {
+  @extend %previewServerIconContainer !optional;
+}
 .optionContainer__5d0b1 {
   @extend %previewServerOptionContainer !optional;
 }
@@ -5068,27 +5203,6 @@ pre {
 .conversationMessage__0d40e {
   @extend %previewServerConversationMessage !optional;
 }
-.innerWrapper__8cde3 {
-  @extend %serverBoostPageBoostPrompt !optional;
-}
-.topPerksCard__9fc01 {
-  @extend %serverBoostPageTopPerksCard !optional;
-}
-.card__67edb {
-  @extend %serverBoostPageCard !optional;
-}
-.wrapper_cf13f4 {
-  @extend %serverBoostPageFaq !optional;
-}
-.scroller__439a2 {
-  @extend %serverBoostPageScroller !optional;
-}
-.headerWave_e4fdee {
-  @extend %serverBoostPageHeaderWave !optional;
-}
-.bodyWave__62812 {
-  @extend %serverBoostPageBodyWave !optional;
-}
 .contentWarningPopout__7d8c2 {
   @extend %everyoneWarningPopout !optional;
 }
@@ -5125,38 +5239,8 @@ pre {
 .banReasonOtherClickable_e4b932 {
   @extend %banReasonOther !optional;
 }
-.channelRow_bba4a8 {
-  @extend %recommendedDeafultChannels !optional;
-}
-.selectableChannelRow_c40337:hover {
-  @extend %updateChannelPermissionsItems !optional;
-}
-.deprivateTableBody_dbf647 {
-  @extend %updateChannelPermissionsMenu !optional;
-}
-.suggestedChannels__158f9 {
-  @extend %recommendedReadOnly !optional;
-}
-.container__25f89 {
-  @extend %pickAnEmoji !optional;
-}
-.searchRowLabel_b64d40 {
-  @extend %enterRoles !optional;
-}
-.shopCard_f7822b {
-  @extend %nitroShopCard !optional;
-}
-.cardBackground_af6852 {
-  @extend %nitroShopCardBackground !optional;
-}
-.darkCardBackground__82a32 {
-  @extend %nitroShopCardDarkBackground !optional;
-}
-.shopScrollBackgroundPrimary_bb1f42 {
-  @extend %nitroShopBackground !optional;
-}
-.pageWrapperBackgroundPrimary__74f14 {
-  @extend %nitroShopBackgroundPrime !optional;
+.buttonWhite__30853 {
+  @extend %nitroShopGiftNitro !optional;
 }
 .footer__03347 {
   @extend %webhookFooter !optional;
@@ -5175,6 +5259,9 @@ pre {
 }
 .perks__63e5a {
   @extend %boostServerPerks !optional;
+}
+.sidebarContianer_e155a0 {
+  @extend %modView !optional;
 }
 .container__8316e {
   @extend %modViewHeader !optional;
@@ -5217,4 +5304,7 @@ pre {
 }
 .elevatedPermission_c4dcb1 {
   @extend %modViewElevatedPermissionItem !optional;
+}
+.buttonWhite__30853 {
+  @extend %giftNitro !optional;
 }
