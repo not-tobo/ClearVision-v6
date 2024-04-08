@@ -492,7 +492,8 @@
 .gameIcon__5f62a {
   @extend %activityPanelGameIcon !optional;
 }
-.title__4a7a9 { // Duplicate Class
+.title__4a7a9 {
+  // Duplicate Class
   @extend %activityPanelTitle !optional;
 }
 .actions_d57dc4 {
@@ -2096,6 +2097,9 @@ pre {
 .ripple__74f0d {
   @extend %voiceMessagePlayingRipple !optional;
 }
+.full-motion {
+  @extend %fullMotion !optional;
+}
 .mouse-mode.full-motion {
   @extend %mouseModeFullMotion !optional;
 }
@@ -2999,6 +3003,9 @@ pre {
 .actionColor_db400e {
   @extend %userProfileActionColor !optional;
 }
+.translate__02873 {
+  @extend %userPopoutTranslate !optional;
+}
 .userPopoutOuter__3884e {
   @extend %userPopoutOuter !optional;
 }
@@ -3143,6 +3150,9 @@ pre {
 }
 .focused_d14fa7 {
   @extend %settingsDropdownOptionFocused !optional;
+}
+.attendeeCTA__1439e {
+  @extend %settingsAttendeeCTA !optional;
 }
 .customColorPicker_bbc020 {
   @extend %settingsColorPickerCustom !optional;
@@ -3759,7 +3769,8 @@ pre {
 .giftCard__4b868 {
   @extend %userSettingsNitroGiftCard !optional;
 }
-.borderRect__8ec00 { // OBSOLETE
+.borderRect__8ec00 {
+  // OBSOLETE
   @extend %userSettingsBoostHeaderBorderRect !optional;
 }
 .header__5c5a9 {
@@ -3964,6 +3975,9 @@ pre {
 }
 .formattedSize__44417 {
   @extend %attachmentSize !optional;
+}
+.languageSelector__4840c {
+  @extend %textContainerLanguageSelector !optional;
 }
 .container_ffbc98 {
   @extend %stageContainer !optional;
