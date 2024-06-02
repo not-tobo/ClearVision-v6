@@ -423,9 +423,6 @@
 .title__4a7a9 {
   @extend %accountPanelUsername !optional;
 }
-.subtext_ce73b4 {
-  @extend %accountPanelDiscriminator !optional;
-}
 .withTagAsButton_e22174 {
   @extend %accountPanelTagButton !optional;
 }
@@ -2286,6 +2283,9 @@ pre {
 .embedCard__2a3c7 {
   @extend %messageAutomodCard !optional;
 }
+.selected__197e7 {
+  @extend %messageAutomodCardSelected !optional;
+}
 .footerContainer_b2e9f6 {
   @extend %messageAutomodFooterContainer !optional;
 }
@@ -2513,9 +2513,6 @@ pre {
 }
 .badgeList__126b0 {
   @extend %userModalBadgeList !optional;
-}
-.badgeList__76720 {
-  @extend %userModalDMBadgeList !optional;
 }
 .badgeList__6b2c7 {
   @extend %accountSettingsBadges !optional;
@@ -3030,7 +3027,10 @@ pre {
 .userPanelInnerThemed__651e4 {
   @extend %userProfileDMInnerThemed !optional;
 }
-.userPanelOverlayBackground_a2b6ae {
+.badgeList__76720 {
+  @extend %userProfileDMBadgeList !optional;
+}
+.overlayBackground__345c9 {
   @extend %userProfileDMOverlayBackground !optional;
 }
 .actionColor_db400e {
@@ -3801,10 +3801,6 @@ pre {
 }
 .giftCard__4b868 {
   @extend %userSettingsNitroGiftCard !optional;
-}
-.borderRect__8ec00 {
-  // OBSOLETE
-  @extend %userSettingsBoostHeaderBorderRect !optional;
 }
 .header__5c5a9 {
   @extend %userSettingsBoostHeader !optional;
@@ -5013,11 +5009,14 @@ pre {
 .shop_b31ed2 {
   @extend %shop !optional;
 }
-.shopScrollBackgroundPrimary__28f1d {
+.shopScroll_caa423 {
   @extend %shopBackground !optional;
 }
-.pageWrapperBackgroundPrimary__36469 {
+.pageWrapper__18871 {
   @extend %shopPageWrapper !optional;
+}
+.whatsNewSectionBackground__00412 {
+  @extend %shopWhatsNew !optional;
 }
 .skeleton__3d497 {
   @extend %shopLoadingSkeleton !optional;
@@ -5034,13 +5033,10 @@ pre {
 .cardSummary_c7b600 {
   @extend %shopLoadingCardContent !optional;
 }
-.shopCard__3d319 {
+.shopCard__9e3fe {
   @extend %shopCard !optional;
 }
-.cardBackground_d86c0e {
-  @extend %shopCardBackground !optional;
-}
-.darkCardBackground__38c63 {
+.darkCardBackground_d398da {
   @extend %shopCardDarkBackground !optional;
 }
 .modalContent__4d9c6 {
