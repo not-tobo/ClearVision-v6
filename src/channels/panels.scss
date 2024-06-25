@@ -29,6 +29,14 @@
     }
   }
 }
+/* Account for account panel width scaling under
+  new design */
+%themeDark %accountPanelAvatarWrapper {
+  min-width: calc(var(--channels-width) - 120px);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+  }
+}
 
 // BUTTONS
 button%panelButton {

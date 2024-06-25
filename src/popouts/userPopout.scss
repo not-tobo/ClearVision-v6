@@ -1,6 +1,8 @@
 // Force bounding box to layer parent
-%fullMotion %userPopoutTranslate {
+%fullMotion %popoutTranslate:has(%userPopoutOuter) {
   transform: unset !important;
+  position: relative;
+	z-index: 0;
 }
 /* USER POPOUT */
 %userPopoutOuter {
@@ -26,19 +28,19 @@
         }
       }
     }
+    %userProfileBanner {
+      -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+      mask: linear-gradient(to bottom, #000, transparent 93%);
+    }
   }
   %popoutAnimatorLeft > & {
     transform-origin: 100% 50%;
   }
-}
-%userPopoutBanner {
-  -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-  mask: linear-gradient(to bottom, #000, transparent 93%);
-}
-%userPopoutBannerPremium {
-  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-  mask: linear-gradient(to bottom, #000 50%, transparent);
-}
+  %userProfileBannerPremium {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+    mask: linear-gradient(to bottom, #000 50%, transparent);
+  }
+} 
 %userPopoutProfileBadges {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
