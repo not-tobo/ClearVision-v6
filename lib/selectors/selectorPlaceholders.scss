@@ -1114,6 +1114,9 @@
 .redesignIconChildContainer_ff7d90 {
   @extend %guildIconChildContainer !optional;
 }
+.premiumTrialAcknowledgedBadge_b089d3 {
+  @extend %nitroTrialBadge !optional;
+}
 .wrapper_fbb822 {
   @extend %scrollerWrap !optional;
 }
@@ -1162,10 +1165,13 @@
 .path3_b6db20 {
   @extend %spinnerCirclePath3 !optional;
 }
+.spinner_eb1ca6 {
+  @extend %spinnerPulsingEllipsisPopout !optional;
+}
 .pulsingEllipsis_b6db20 {
   @extend %spinnerPulsingEllipsis !optional;
 }
-.pulsingEllipsis_b6db20 .item_b6db20 {
+.item_b6db20 {
   @extend %spinnerPulsingEllipsisItem !optional;
 }
 .container_cebd1c {
@@ -1180,11 +1186,23 @@
 .input_cebd1c {
   @extend %switchCheckbox !optional;
 }
-.item_a0 {
-  @extend %tabBarItem !optional;
+.top_a0 {
+  @extend %tabBarTop !optional;
+}
+.side_a0 {
+  @extend %tabBarSide !optional;
+}
+.brand_a0 {
+  @extend %tabBarBrand !optional;
 }
 .topPill_a0 {
   @extend %tabBarTopPill !optional;
+}
+.themed_a0 {
+  @extend %tabBarThemed !optional;
+}
+.item_a0 {
+  @extend %tabBarItem !optional;
 }
 .selected_a0 {
   @extend %tabBarItemSelected !optional;
@@ -2484,6 +2502,12 @@ pre {
 .userProfileOuterThemed_c69a7b {
   @extend %userProfileOuterThemed !optional;
 }
+.statusBubbleOuter_d0a252 {
+  @extend %userProfileStatusBubbleOuter !optional;
+}
+.statusBubble_d0a252 {
+  @extend %userProfileStatusBubble !optional;
+}
 .userPanelInnerThemed_c69a7b {
   @extend %userProfileDMInnerThemed !optional;
 }
@@ -2494,7 +2518,7 @@ pre {
   @extend %userProfileDMOverlayBackground !optional;
 }
 .actionColor_fc39e7 {
-  @extend %userProfileActionColor !optional;
+  @extend %userModalActivityButton !optional;
 }
 .banner_c3e427 {
   @extend %userProfileBanner !optional;
@@ -2530,8 +2554,11 @@ pre {
 .profileCustomizationPreview_ab876d {
   @extend %userPopoutCustomizationPreview !optional;
 }
-.buttonColor_e36233 {
-  @extend %userPopoutButtonColor !optional;
+.activity_cd74cc {
+  @extend %userPopoutActivity !optional;
+}
+.buttonColor_cd74cc {
+  @extend %userPopoutActivityButton !optional;
 }
 .roles_fa2f72 {
   @extend %userPopoutRoles !optional;
@@ -2539,8 +2566,8 @@ pre {
 .note_c90ad7 {
   @extend %userPopoutNote !optional;
 }
-.messageInputContainer_f2c0a8 {
-  @extend %userPopoutMessageInputContainer !optional;
+.menu_d4e7c2 {
+  @extend %userPopoutMenu !optional;
 }
 .userProfileModalOuter_c69a7b {
   @extend %userModalOuter !optional;
@@ -3175,9 +3202,6 @@ pre {
 .sidebar_c25c6d {
   @extend %settingsSidebar !optional;
 }
-.side_a0 {
-  @extend %settingsSide !optional;
-}
 .selectedBackground_ae3c77 {
   @extend %settingsSidebarScrollerSelectedBackground !optional;
 }
@@ -3228,12 +3252,6 @@ pre {
 }
 .header_bd05f1 {
   @extend %guildSettingsRoleHeader !optional;
-}
-.top_a0 {
-  @extend %guildSettingsRoleHeaderTabTop !optional;
-}
-.brand_a0 {
-  @extend %guildSettingsRoleHeaderTabBrand !optional;
 }
 .previewContainer_bdfce3 {
   @extend %guildSettingsRoleIconPreview !optional;
@@ -3658,22 +3676,28 @@ pre {
 .botTagInvert_a02df3 {
   @extend %botTagInvert !optional;
 }
-.role_e4010c {
+.role_e4010c, //top is old profiles, bottom new profiles
+.role_f9575e {
   @extend %role !optional;
 }
-.roleCircle_a26d7b {
+.roleCircle_a26d7b,
+.roleCircle_f9575e {
   @extend %roleCircle !optional;
 }
-.roleRemoveIcon_e4010c {
+.roleRemoveIcon_e4010c,
+.roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
-.roleRemoveButton_e4010c {
+.roleRemoveButton_e4010c,
+.roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }
-.roleName_e4010c {
+.roleName_e4010c,
+.roleName_f9575e {
   @extend %roleName !optional;
 }
-.addButton_e4010c {
+.addButton_e4010c,
+.button_edead5 {
   @extend %roleAddButton !optional;
 }
 .container_ac201b {
@@ -3739,6 +3763,21 @@ pre {
 .upsellOverlay_eb49af {
   @extend %userSettingsProfileUpsellOverlay !optional;
 }
+.container_f7ea1b {
+  @extend %userSettingsPrivacyStandingContainer !optional;
+}
+.avatarBackground_bb882a {
+  @extend %userSettingsPrivacyStandingAvatarBG !optional;
+}
+.line_f7ea1b {
+  @extend %userSettingsPrivacyStandingLine !optional;
+}
+.marker_f7ea1b {
+  @extend %userSettingsPrivacyStandingMarker !optional;
+}
+.empty_f7ea1b {
+  @extend %userSettingsPrivacyStandingMarkerEmpty !optional;
+}
 .container_b01337,
 .container_d7c696,
 .container_a2e886 {
@@ -3769,8 +3808,14 @@ pre {
 .accountBtnInner_ec99f9 {
   @extend %userSettingsConnectionsButtonInner !optional;
 }
+.perkCard_d611db {
+  @extend %userSettingsNitroPerkCard !optional;
+}
 .giftCard_cf74b3 {
   @extend %userSettingsNitroGiftCard !optional;
+}
+.expandedProgressBarContainerSettingsPage_c88bb1 {
+  @extend %userSettingsNitroShareCard !optional;
 }
 .wave_e74e54 {
   @extend %userSettingsBoostHeaderWave !optional;
@@ -4948,6 +4993,9 @@ pre {
 }
 .gifIconContainer_f2f431 {
   @extend %avatarGifIconContainer !optional;
+}
+.editingContainer_ba5b9e {
+  @extend %avatarEditingContainer !optional;
 }
 .decorationGridItem_b35b54 {
   @extend %avatarDecoItem !optional;
