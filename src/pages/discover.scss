@@ -7,6 +7,9 @@
 }
 
 // SIDEBAR
+%themeDark %discoverCategory {
+  background-color: transparent;
+}
 %discoverCategoryItem {
   &%discoverCategoryItemSelected {
     %discoverCategoryItemInner {
