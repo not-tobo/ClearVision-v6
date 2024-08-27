@@ -4,6 +4,14 @@
   box-shadow: 0 0 2px 2px $main-color;
 }
 
+// REPORT MESSAGE
+%messageReportOption {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
 // REACTIONS LIST
 %themeDark {
   %reactionModalScroller,
@@ -187,10 +195,6 @@
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
   }
 }
-// CREATE SERVER MODAL
-%textSmallNormal {
-  color: var(--text-normal) !important;
-}
 
 // GIFT MODAL
 /*other modals, nitro gift*/
@@ -233,16 +237,13 @@
 %webhookFooter {
   background-color: transparent;
 }
-
 %themeDark %webhookPopout {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 %webhookEmojiRow {
   background-color: $main-color;
   color: var(--text-normal) !important;
 }
-
 %webhookBackground {
   background: var(--background-overlay);
 }
