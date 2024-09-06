@@ -16,12 +16,15 @@
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 // MY ACCOUNT - VERIFY PHONE
-%phoneVerification {
+%phoneInput {
   background-color: hsla(0, 0%, 100%, 0.07);
   border: none;
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   &:focus-within {
     box-shadow: 0 0 2px 2px $main-color;
+  }
+  %phoneInputField {
+    background-color: transparent;
   }
 }
 
@@ -37,7 +40,13 @@
   padding: 0;
 }
 %avatarGifIconContainer {
-  background-color: $main-color;
+  background-color: hsla( 0, 0%, 0%, 0.8);
+}
+%avatarGifIcon {
+  background-color: transparent;
+  path {
+    fill: #fff;
+  }
 }
 %avatarEditingContainer {
   background-color: transparent;
@@ -291,6 +300,7 @@
     }
   }
 }
+
 %userSettingsEntranceSoundButton {
   background-color: hsla(0, 0%, 100%, 0.1);
 }

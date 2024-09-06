@@ -89,12 +89,12 @@
 
 // MEMBERS ACTIVITY POPOUT
 /*clicked in*/
+%memberActivityContentWrapper,
 %memberActivityInteractionsContainer {
-  background: var(--background-overlay);
+  background: transparent;
 }
 /*clicked in icon*/
 %memberActivityShareToChannelButton {
-  background: var(--main-color);
   path {
     fill: #fff;
   }
