@@ -168,6 +168,9 @@
     background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
+%subEnabledServers {
+  background: rgba(0, 0, 0, 0.6)
+}
 
 // BILLING
 %themeDark {
@@ -263,6 +266,12 @@
 }
 %userSettingsBoostTransferButton {
   background-color: $main-color;
+}
+%freeBoost {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content_c258fa:after, .content_c258fa:before {
+  border-color: transparent;
 }
 
 // APPEARANCE

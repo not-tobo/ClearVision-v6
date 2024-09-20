@@ -44,7 +44,7 @@
 // VC ACTIVITY STATUS POPOUT
 %vcActivityPopout,
 %vcSetActivityPopout {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
 }
 %vcSetActivityPopoutIcon {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -91,10 +91,11 @@
 /*clicked in*/
 %memberActivityContentWrapper,
 %memberActivityInteractionsContainer {
-  background: transparent;
+  background-color: cv('bg.general.popout');
 }
 /*clicked in icon*/
 %memberActivityShareToChannelButton {
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
   path {
     fill: #fff;
   }
