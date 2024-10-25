@@ -1,3 +1,5 @@
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[prettier-link]: https://github.com/prettier/prettier
 [release-badge]: https://img.shields.io/github/v/release/ClearVision/ClearVision-v6?include_prereleases&style=flat-square
 [release-link]: https://github.com/ClearVision/ClearVision-v6/releases
 [license-badge]: https://img.shields.io/github/license/ClearVision/ClearVision-v6?style=flat-square
@@ -8,11 +10,15 @@
 [issues-link]: https://github.com/ClearVision/ClearVision-v6/issues
 [prs-badge]: https://img.shields.io/github/issues-pr/ClearVision/ClearVision-v6?style=flat-square
 [prs-link]: https://github.com/ClearVision/ClearVision-v6/pulls
+[sass-badge]: https://img.shields.io/badge/Sass-CC6699.svg?style=flat-square&logo=sass&logoColor=white
+[sass-link]: https://sass-lang.com/
 
 <div align="center">
 
 # ClearVision v6
 
+[![code style: prettier][prettier-badge]][prettier-link]
+[![Language: Sass][sass-badge]][sass-link]
 [![Releases][release-badge]][release-link]
 [![License][license-badge]][license-link]
 [![Discord Server][discord-badge]][discord-link]
@@ -48,18 +54,18 @@ Download the theme file from [our official support server](https://clearvision.g
 
 Check out our replugged theme [here!](https://github.com/ClearVision/CV-Replugged)
 
-**For using the theme online:** 
+**For using the theme online:**
 
-There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css` 
+There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css`
 
 For customizing the theme from there, you'll want to use custom css and add any variables you'd like to change. It should look something like this
+
 ```
 :root {
-  --main-color: red; 
+  --main-color: red;
   --hover-color: yellow;
 }
 ```
-
 
 ## Building from source
 

@@ -1,6 +1,6 @@
 /*Shiki code blocks*/
 .shiki-plain {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.2)) !important;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.2)) !important;
 }
 
 .shiki-container {
@@ -48,18 +48,21 @@
 }
 
 // SHOW HIDDEN CHANNELS
+// SHOW HIDDEN CHANNELS
 .shc-lock-screen-allowed-users-and-roles-container {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .shc-lock-screen-allowed-users-and-roles-container button {
-  background: $main-color;
+  background: transparent;
   color: #fff;
   border-radius: 10px;
+  z-index: 10;
   &:hover {
     background: $hover-color;
     color: #fff;
     border-radius: 10px;
+    z-index: 10;
   }
 }
 
@@ -71,9 +74,17 @@
   position: relative;
   background-color: transparent;
   %emptyChannelRoleColor {
-    z-index: 10;
+    z-index: -1;
+  }
+  &:hover {
+    background-color: $hover-color;
   }
 }
+
+.scroller_ccc074 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* Summaries in chat BETA */
 .topicsPillContainer__2c107 {
   background: rgba(0, 0, 0, 0.6);
@@ -83,7 +94,7 @@
 }
 .newTopicsBarContainer__8c1e3 {
   background-color: $main-color;
-  opacity: .5 
+  opacity: 0.5;
 }
 .topicsPillCaret__46c3b {
   background: $main-color;

@@ -2,17 +2,17 @@
 %base {
   %pageWrapper,
   %hubDiscoverScroller {
-    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.5));
   }
 }
 
 // SIDEBAR
-%themeDark %discoverCategory {
+%discoverCategory {
   background-color: transparent;
 }
 %discoverCategoryItem {
   position: relative;
-	z-index: 1;
+  z-index: 1;
   &:before {
     content: '';
     position: absolute;
@@ -48,9 +48,7 @@
     }
   }
   &:is(%discoverCategoryItemSelected, :hover, :active) {
-    :is(%discoverCategoryItemInner, %discoverCategoryQuestItemInner) {
-      background-color: transparent;
-    }
+    background-color: transparent;
   }
 }
 
@@ -69,7 +67,7 @@
       box-shadow: none;
     }
     %discoverSearchBoxInput {
-      color: var(--text-normal);
+      color: $text-normal;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);
       }
@@ -92,7 +90,7 @@
         box-shadow: none;
       }
       %discoverSearchBoxInput {
-        color: var(--text-normal);
+        color: $text-normal;
         &::placeholder {
           color: hsla(0, 0%, 100%, 0.3);
         }
@@ -143,30 +141,24 @@
 
 // QUESTS
 %discoverQuestHeaderBackdrop {
-	background-color: rgba($color: #0c1522, $alpha: 0.7);
-	backdrop-filter: blur(5px);
+  background-color: rgba($color: #0c1522, $alpha: 0.7);
+  backdrop-filter: blur(5px);
 }
-%themeDark {
-  %discoverQuest {
-    background-color: transparent;
-  }
-  %discoverQuestContent {
-    background: none;
-    backdrop-filter: none;
-  }
+%discoverQuest {
+  background-color: transparent;
 }
 %discoverQuestTabSelected {
   border-bottom-color: $main-color !important;
 }
 %discoverQuestItem {
-  background-color: hsla(0, 0%, 0%, .4)
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %discoverQuestItemGradient {
-  background: linear-gradient(0deg, hsla(0, 0%, 0%, .9) 10%, hsla(0, 0%, 0%, .6) 25%, transparent 35%);
+  background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.9) 10%, hsla(0, 0%, 0%, 0.6) 25%, transparent 35%);
 }
 %discoverQuestItemDescription {
-	background-color: transparent;
+  background-color: transparent;
 }
 %discoverQuestItemName {
-	color: $main-color !important;
+  color: $main-color !important;
 }
