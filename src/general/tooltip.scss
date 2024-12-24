@@ -7,6 +7,7 @@
   font-weight: 600;
   %tooltipContent {
     padding: 0;
+    color: hsla(0, 0%, 100%, 0.9);
   }
   &%tooltipPrimary,
   &%tooltipNested {
@@ -61,10 +62,13 @@
 }
 
 // UPSELL
-%upsellTooltipText {
+%upsellTooltip {
   background-color: hsla(0, 0%, 0%, 0.8);
   &%upsellTooltipCaretTopCenter:after {
     border-bottom-color: hsla(0, 0%, 0%, 0.8);
+  }
+  &%upsellTooltipCaretRightCenter:after {
+    border-left-color: hsla(0, 0%, 0%, 0.8);
   }
 }
 

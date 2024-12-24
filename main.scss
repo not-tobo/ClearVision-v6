@@ -98,10 +98,9 @@ $version: '6.9.0';
 @import 'src/modals/addServerModal';
 @import 'src/modals/keyboardShortcuts';
 @import 'src/modals/otherModals';
+@import 'src/modals/payments';
 @import 'src/modals/screenshare';
-@import 'src/modals/soundboard';
 @import 'src/modals/threadModal';
-@import 'src/modals/userModal';
 
 // PAGES
 @import 'src/pages/appDirectory';
@@ -125,10 +124,13 @@ $version: '6.9.0';
 @import 'src/popouts/inboxPopout';
 @import 'src/popouts/otherPopouts';
 @import 'src/popouts/searchPopout';
+@import 'src/popouts/soundboard';
 @import 'src/popouts/stickers';
 @import 'src/popouts/threadPopout';
-@import 'src/popouts/userPopout';
 @import 'src/popouts/voiceChannelListeningTo';
+
+// PROFILES
+@import 'src/profiles/userProfiles';
 
 // SCREENS
 @import 'src/screens/crash';
