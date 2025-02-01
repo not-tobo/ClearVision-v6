@@ -1,5 +1,5 @@
 /* CHANNELS */
-html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
+html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
   width: cv('channels-width') !important;
   background: rgba(0, 0, 0, calc($bg-shading * 0.3));
 }
@@ -23,7 +23,6 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
   font-family: cv('font.main');
   font-weight: 600;
   text-shadow: 0 0 3px #000;
-  
 }
 
 // GUILD BANNER
@@ -33,7 +32,6 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
 }
 %channelBanner {
   width: cv('channels-width');
-  -webkit-mask: linear-gradient(to bottom, #000, transparent);
   mask: linear-gradient(to bottom, #000, transparent);
 }
 %channelBannerImage {
@@ -53,18 +51,14 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
 
 // CHANNEL CONTENT
 %channelLink {
-  transition: all 0.15s ease-in-out;
-}
-%channelLink {
   position: relative;
-  background: transparent !important;
+  transition: all 0.15s ease-in-out;
   &:before {
     content: '';
     position: absolute;
     @include stretch;
     transition: all 0.15s ease-in-out;
     z-index: -1;
-    pointer-events: none;
     border-radius: 4px;
   }
   &:after {
@@ -74,41 +68,29 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
     opacity: 0.9;
     transition: all 0.3s ease-in-out;
     z-index: -1;
-    pointer-events: none;
     border-radius: 4px;
   }
-  %channelIcon {
-    width: 18px;
-    height: 18px;
-    margin-right: 3px;
-    color: var(--channel-color);
-    opacity: 1;
-    transition: all 0.15s ease-in-out;
-    > path {
-      opacity: 0.7;
-    }
-    > path:last-of-type {
-      opacity: 1;
-    }
-  }
-  %channelName {
-    color: var(--channel-color);
-    transition: all 0.15s ease-in-out;
-  }
+}
+%channelIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  color: var(--channel-color);
+  transition: all 0.15s ease-in-out;
+}
+%channelName {
+  color: var(--channel-color);
+  transition: all 0.15s ease-in-out;
 }
 %channelButtons {
   margin-left: 1px;
   animation: cv-fade-to-3 0.15s ease-in-out;
 }
 %channelActionIcon {
-  color: #fff;
-  opacity: 0.3;
+  color: var(--channel-color);
   transition: all 0.15s ease-in-out;
-  path {
-    fill: #fff;
-  }
   &:hover {
-    opacity: 0.7;
+    color: var(--channel-hovered);
   }
 }
 %channelStatusText,
@@ -118,60 +100,36 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
 %channelWrapper {
   // HOVER
   &:hover {
-    %channelName,
-    %channelIcon {
-      color: #fff;
-    }
     %channelLink {
-      background: var(--bg-overlay-hover, var(--background-modifier-hover));
-      &:before {
-        background: hsla(0, 0%, 100%, 0.1);
-      }
-      %channelLinkTop {
-        %channelContainerDefault & {
-          %channelIcon,
-          %channelName {
-            color: hsla(0, 0%, 100%, 0.7);
-          }
-        }
-      }
+      background: var(--background-modifier-hover);
+    }
+    :is(%channelName, %channelIcon) {
+      color: var(--channel-hovered); 
     }
   }
   // UNREAD
   &%channelWrapperUnread {
-    %channelLink {
-      %channelLinkTop {
-        %channelName {
-          color: var(--channel-unread);
-          text-shadow: 0 0 3px;
-        }
-        %channelIcon {
-          color: var(--channel-unread);
-          filter: drop-shadow(0 0 3px);
-          opacity: 1;
-        }
-      }
+    %channelName {
+      color: var(--channel-unread);
+      text-shadow: 0 0 3px;
+    }
+    %channelIcon {
+      color: var(--channel-unread);
+      filter: drop-shadow(0 0 3px);
     }
     &:hover {
-      %channelLink {
-        %channelLinkTop {
-          %channelName {
-            color: var(--channel-text-selected);
-          }
-          %channelIcon {
-            color: var(--channel-text-selected);
-          }
-        }
+      :is(%channelName, %channelIcon) {
+        color: var(--channel-selected);
       }
     }
   }
   // SELECTED
   &%channelWrapperSelected {
-    %channelName,
-    %channelIcon {
-      color: #fff;
+    :is(%channelName, %channelIcon) {
+      color: var(--channel-selected);
     }
     %channelLink {
+      background-color: transparent;
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
       }
@@ -179,21 +137,6 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
         right: 0;
         background: $main-color;
         animation: cv-channel-select 0.3s ease-in-out;
-      }
-      %channelContainerDefault & {
-        %channelIcon,
-        %channelName {
-          color: var(--channel-text-selected);
-        }
-        %channelIconLive {
-          color: var(--channel-text-selected) !important;
-        }
-      }
-      %channelActionIcon {
-        opacity: 0.7;
-        &:hover {
-          opacity: 1;
-        }
       }
     }
     %textExtraSmallMedium,
@@ -204,42 +147,24 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
 
   // CONNECTED
   &%channelWrapperConnected {
-    %channelLink {
-      %channelLinkTop {
-        %channelName {
-          color: $main-color;
-          text-shadow: 0 0 3px;
-        }
-        %channelIcon {
-          color: $main-color;
-          filter: drop-shadow(0 0 3px);
-        }
-      }
+    %channelName {
+      color: var(--channel-unread);
+      text-shadow: 0 0 3px;
+    }
+    %channelIcon {
+      color: var(--channel-unread);
+      filter: drop-shadow(0 0 3px);
     }
   }
   // MUTED
   &%channelWrapperMuted {
-    %channelLink {
-      %channelLinkTop {
-        %channelIcon,
-        %channelName {
-          color: var(--muted-color);
-        }
-      }
+    :is(%channelName, %channelIcon) {
+      color: var(--channel-muted);
     }
     &:hover {
-      %channelLink {
-        %channelLinkTop {
-          &:before {
-            background: hsla(0, 0%, 100%, 0.07);
-          }
-          %channelContainerDefault & {
-            %channelIcon,
-            %channelName {
-              color: var(--channel-color);
-            }
-          }
-        }
+      :is(%channelName, %channelIcon) {
+        color: var(--channel-color);
+        
       }
     }
   }

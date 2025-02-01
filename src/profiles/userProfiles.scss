@@ -28,7 +28,6 @@
       &::before {
         content: '';
         position: absolute;
-        @include stretch;
         background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
         @include filters(cv('bg.modal'));
         width: 100%;
@@ -59,7 +58,6 @@
 
   // BANNER
   %userProfileBanner {
-    -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
     mask: linear-gradient(to bottom, #000, transparent 93%);
   }
 
@@ -94,6 +92,7 @@
   }
 }
 
+
 // CUSTOM PROFILE
 %userProfileCustomTheme {
   %userProfileOverlayScroller {
@@ -103,6 +102,12 @@
   }
   %userProfileNote {
     %input:focus {
+      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
+    }
+  }
+  %channelTextArea {
+    background: var(--input-background);
+    &:focus-visible {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
@@ -129,4 +134,9 @@
   > polygon {
     display: none;
   }
+}
+
+// MESSAGE USER
+html:not(%visualRefreshChatInput) %userProfileMessage {
+  background: transparent;
 }
