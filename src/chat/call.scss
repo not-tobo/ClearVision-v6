@@ -7,6 +7,7 @@
 }
 %callContainer {
   background-color: transparent;
+  border-radius: 0;
 }
 
 // VIDEO STREAM
@@ -23,7 +24,7 @@
   background-color: transparent;
 }
 %callParticipantsButton {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
   }

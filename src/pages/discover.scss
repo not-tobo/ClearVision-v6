@@ -1,6 +1,6 @@
 /* DISCOVER */
 %discover {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));;
 }
 %discoverHeaderBackdrop {
   background-color: rgba($color: #0c1522, $alpha: 0.7);
@@ -59,10 +59,10 @@
 
 // GUILD LIST
 %themeDark {
-  %discoverGuildCard,
+  :is(%discoverGuildCard,
   %discoverHubCard,
-  %discoverGuildCardIcon {
-    background-color: hsla(0, 0%, 0%, 0.4);
+  %discoverGuildCardIcon) {
+    background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
     &:hover,
     &:hover %discoverGuildCardIcon {
@@ -85,7 +85,7 @@
   background-color: cv('colors.offline');
 }
 %discoverGuildLoading {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 
@@ -99,6 +99,9 @@
 }
 %discoverSearchBackButton {
   background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %discoverSearchEmpty {
   background-color: transparent;
@@ -147,7 +150,7 @@
 
 // QUESTS
 %discoverQuestItem {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %discoverQuestItemGradient {
   background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.9) 10%, hsla(0, 0%, 0%, 0.6) 25%, transparent 35%);
@@ -157,4 +160,40 @@
 }
 %discoverQuestItemName {
   color: $main-color !important;
+}
+
+// APPS
+%themeDark %discoverAppListAvatar {
+  background-color: cv('bg.general.card');
+  border-color: transparent;
+}
+%discoverGuildCard %discoverAppListAvatar {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  border-color: transparent;
+}
+%discoverAppAvatar {
+  background-color: cv('bg.general.card');
+  border-color: transparent;
+}
+%discoverAppCategory {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.15);
+  }
+}
+%discoverAppSupportServer,
+%discoverAppCommands,
+%discoverAppCommand,
+%discoverAppPermissionList,
+%discoverAppDataAccess {
+  background: cv('bg.general.card');
+  border: none;
+}
+%discoverAppMoreApps {
+  background: cv('bg.general.card');
+  border: none;
+  &:focus,
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
 }

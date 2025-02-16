@@ -169,14 +169,32 @@
 .gameActivityToggleAdded_Yd-YxC {
   @extend %bdGameActivityToggle !optional;
 }
-.progressBarContainer_eff079 {
-  @extend %serverBoostProgressBar !optional;
+.scroller__6fd0e {
+  @extend %serverBoost !optional;
 }
-.subscription_d970da {
-  @extend %readyToBoostContainer !optional;
+.tierCardNewFeatureBadge_be48d0 {
+  @extend %serverBoostNewBadge !optional;
 }
-.tierPill_d970da {
-  @extend %readyToBoostProgressPill !optional;
+.headerWave__1dfae {
+  @extend %serverBoostHeaderWave !optional;
+}
+.bodyWave__1dfae {
+  @extend %serverBoostBottomWave !optional;
+}
+.topPerksCard__3add8 {
+  @extend %serverBoostTopPerks !optional;
+}
+.card__4d7bb {
+  @extend %serverBoostPerks !optional;
+}
+.wrapper__5b98e {
+  @extend %serverBoostFAQ !optional;
+}
+.innerWrapper_b4589b {
+  @extend %serverBoostFooterInner !optional;
+}
+.guildIcon_b4589b {
+  @extend %serverBoostFooterGuildIcon !optional;
 }
 .containerDefault__29444 {
   @extend %categoryContainerDefault !optional;
@@ -600,7 +618,7 @@
 .activityEmoji__972a0 {
   @extend %privateChannelActivityEmoji !optional;
 }
-.activityText__972a0 {
+.text__8ac07 {
   @extend %privateChannelActivityText !optional;
 }
 .icon_ad923e {
@@ -647,6 +665,9 @@
 }
 .bar__7aaec {
   @extend %barBrand !optional;
+}
+.barButtonBase__0f481 {
+  @extend %barbutton !optional;
 }
 .wrapper_cb9592 {
   @extend %callWrapper !optional;
@@ -1245,12 +1266,6 @@
 .disabled_b3f026 {
   @extend %tabBarItemDisabled !optional;
 }
-.premiumLabel_e681d1 {
-  @extend %premiumLabel !optional;
-}
-.icon_cbe0b4 {
-  @extend %serverBoostIcon !optional;
-}
 .tooltip__382e7 {
   @extend %tooltip !optional;
 }
@@ -1741,7 +1756,7 @@
 .membersGroup_c8ffbb {
   @extend %membersGroup !optional;
 }
-.member_c8ffbb {
+.member__5d473 {
   @extend %member !optional;
 }
 .selected__91a9d {
@@ -1751,10 +1766,13 @@
   @extend %memberOffline !optional;
 }
 .memberInner__5d473 {
-  @extend %memberLayout !optional;
+  @extend %memberInner !optional;
 }
 .avatar__91a9d {
   @extend %memberAvatar !optional;
+}
+.avatar_c19a55 {
+  @extend %avatarLarge !optional;
 }
 .content__91a9d {
   @extend %memberContent !optional;
@@ -1767,6 +1785,9 @@
 }
 .username__5d473 {
   @extend %memberUsername !optional;
+}
+.username__703b9 {
+  @extend %memberUsernameInner !optional;
 }
 .ownerIcon__5d473 {
   @extend %memberOwnerIcon !optional;
@@ -2054,7 +2075,7 @@ pre {
 .wrapper_d5f3cd {
   @extend %inviteWrapper !optional;
 }
-.h5_b717a1 {
+.header_d5f3cd {
   @extend %inviteTitle !optional;
 }
 .guildIcon_d5f3cd {
@@ -2081,14 +2102,8 @@ pre {
 .statusOffline_d5f3cd {
   @extend %inviteStatusOffline !optional;
 }
-.button_d5f3cd {
-  @extend %inviteButton !optional;
-}
-.lookFilled__201d5.colorGreen__201d5 {
-  @extend %inviteButtonJoin !optional;
-}
-.lookFilled__201d5.colorBrand__201d5 {
-  @extend %inviteButtonExpired !optional;
+.inviteDestinationExpired_d5f3cd {
+  @extend %inviteExpired !optional;
 }
 .wrapper_cf09d8 {
   @extend %player !optional;
@@ -2201,6 +2216,12 @@ pre {
 .blockedSystemMessage__7a70a {
   @extend %messageBlockedSystemMessage !optional;
 }
+.avatar_c19a55 {
+  @extend %messageAvatar !optional;
+}
+.clickable_c19a55 {
+  @extend %messageAvatarClickable !optional;
+}
 .header_c19a55 {
   @extend %messageHeader !optional;
 }
@@ -2213,7 +2234,7 @@ pre {
 .timestamp_c19a55 {
   @extend %messageTimestamp !optional;
 }
-.timestamp_c19a55.alt_c19a55 {
+.alt_c19a55 {
   @extend %messageTimestampAlt !optional;
 }
 .messageContent_c19a55 {
@@ -2246,17 +2267,11 @@ pre {
 .repliedTextContent_c19a55 {
   @extend %messageRepliedTextContent !optional;
 }
-.repliedTextPlaceholder_c19a55 {
-  @extend %messageRepliedTextPlaceholder !optional;
-}
 .executedCommand_c19a55 {
-  @extend %messageRepliedExecutedCommand !optional;
+  @extend %messageExecutedCommand !optional;
 }
 .appLauncherOnboardingCommandName_c19a55 {
-  @extend %messageRepliedAppLauncherCommandName !optional;
-}
-.commandName_c19a55 {
-  @extend %messageRepliedCommandName !optional;
+  @extend %messageExecutedCommandName !optional;
 }
 .inlineMediaEmbed__623de {
   @extend %messageInlineMediaEmbed !optional;
@@ -2264,11 +2279,20 @@ pre {
 .spoilerMarkdownContent__54ab5 {
   @extend %messageSpoiler !optional;
 }
+.hasThread_c19a55 {
+  @extend %messageHasThread !optional;
+}
+.container__9271d {
+  @extend %messageThreadEmbed !optional;
+}
+.cta__9271d {
+  @extend %messageThreadCTA !optional;
+}
+.jump__5126c {
+  @extend %messageThreadJumpButton !optional;
+}
 .markup__75297 {
   @extend %markup !optional;
-}
-.icon__235ca {
-  @extend %messageSystemIcon !optional;
 }
 .wrapper_f61d60 {
   @extend %mentionWrapper !optional;
@@ -2331,7 +2355,7 @@ pre {
   @extend %messageAutomodCardSelected !optional;
 }
 .footerContainer__44492 {
-  @extend %messageAutomodFooterContainer !optional;
+  @extend %messageAutomodFooter !optional;
 }
 .footerAction__44492 {
   @extend %messageAutomodFooterAction !optional;
@@ -2339,11 +2363,8 @@ pre {
 .footerIcon__44492 {
   @extend %messageAutomodFooterIcon !optional;
 }
-.blockquoteContainer__75297 {
-  @extend %blockquoteContainer !optional;
-}
 .blockquoteDivider__75297 {
-  @extend %blockquoteDivider !optional;
+  @extend %messageQuoteDivider !optional;
 }
 .reactions__23977 {
   @extend %reactions !optional;
@@ -2752,6 +2773,33 @@ pre {
 }
 .questName__956c6 {
   @extend %discoverQuestItemName !optional;
+}
+.avatar_f215b9 {
+  @extend %discoverAppListAvatar !optional;
+}
+.avatar_efaad4 {
+  @extend %discoverAppAvatar !optional;
+}
+.category_ed45d7 {
+  @extend %discoverAppCategory !optional;
+}
+.card__6faf3 {
+  @extend %discoverAppSupportServer !optional;
+}
+.contentContainer_c6b177 {
+  @extend %discoverAppCommands !optional;
+}
+.commandName_c6b177 {
+  @extend %discoverAppCommand !optional;
+}
+.list__83c7c {
+  @extend %discoverAppPermissionList !optional;
+}
+.contentContainer__8f46b {
+  @extend %discoverAppDataAccess !optional;
+}
+.appContainer__5a4b6 {
+  @extend %discoverAppMoreApps !optional;
 }
 .container__50387 {
   @extend %connectionDebugPopout !optional;
@@ -3236,6 +3284,9 @@ pre {
 .selectedBackground_e681d1 {
   @extend %settingsSidebarNitroSelected !optional;
 }
+.serverBoostTabItem_cbe0b4 {
+  @extend %settingsSidebarServerBoost !optional;
+}
 .header_b3f026 {
   @extend %settingsHeader !optional;
 }
@@ -3332,10 +3383,10 @@ pre {
 .container__6cd3a {
   @extend %guildSettingsSafetyRadio !optional;
 }
-.clickableContainer_e5c5d5 {
+.clickableContainer__6cd3a {
   @extend %guildSettingsSafetyRadioClickable !optional;
 }
-.backgroundModifierContainer_e5c5d5 {
+.backgroundModifierContainer__6cd3a {
   @extend %guildSettingsSafetyRadioBG !optional;
 }
 .disabled__6cd3a {
@@ -3344,7 +3395,7 @@ pre {
 .noAction__6cd3a {
   @extend %guildSettingsSafetyRadioNoAction !optional;
 }
-.selected_e5c5d5 {
+.selected__6cd3a {
   @extend %guildSettingsSafetyRadioSelected !optional;
 }
 .transparent__6cd3a {
@@ -3722,9 +3773,6 @@ pre {
 .avatar__91a9d {
   @extend %avatarImage !optional;
 }
-.avatar_c19a55 {
-  @extend %avatarLarge !optional;
-}
 .botTag__82f07 {
   @extend %botTag !optional;
 }
@@ -3812,21 +3860,6 @@ pre {
 .upsellContainer__0b69f {
   @extend %userSettingsProfileUpsellContainer !optional;
 }
-.container_d878e7 {
-  @extend %userSettingsPrivacyStandingContainer !optional;
-}
-.avatarBackground_eb2508 {
-  @extend %userSettingsPrivacyStandingAvatarBG !optional;
-}
-.line_d878e7 {
-  @extend %userSettingsPrivacyStandingLine !optional;
-}
-.marker_d878e7 {
-  @extend %userSettingsPrivacyStandingMarker !optional;
-}
-.empty_d878e7 {
-  @extend %userSettingsPrivacyStandingMarkerEmpty !optional;
-}
 .container__5dbf8,
 .container__8cc9a,
 .container__5b321 {
@@ -3887,8 +3920,8 @@ pre {
 .appliedBoostContainer_ceb06a {
   @extend %userSettingsBoostApplied !optional;
 }
-.selectSearch__39466 {
-  @extend %userSettingsBoostTransferSearch !optional;
+.selectGuild__39466 {
+  @extend %userSettingsBoostTransferSelect !optional;
 }
 .selectGuildPseudoCta__39466 {
   @extend %userSettingsBoostTransferButton !optional;
@@ -3906,8 +3939,7 @@ pre {
 .defaultIndicator__43963 {
   @extend %userSettingsBillingIndicator !optional;
 }
-.description__43963,
-.descriptionWrapper__43963 {
+.description__43963 {
   @extend %userSettingsBillingMethodText !optional;
 }
 .paymentPane__01014 {
@@ -4189,9 +4221,6 @@ pre {
 .disabled__2d021 {
   @extend %pageButtonDisabled !optional;
 }
-.consentCard_ea523e {
-  @extend %consentCard !optional;
-}
 .nowPlayingColumn__133bf {
   @extend %nowPlayingColumn !optional;
 }
@@ -4220,7 +4249,7 @@ pre {
   @extend %activeNowPartyOverflow !optional;
 }
 .applicationStreamingPreviewWrapper__00943 {
-  @extend %activeNowPreviewWrapper !optional;
+  @extend %activeNowStreamPreview !optional;
 }
 .emptyCard__7e549 {
   @extend %emptyActiveNowCard !optional;
@@ -4345,18 +4374,6 @@ pre {
 .icon__1b24f {
   @extend %threadsPopoutIcon !optional;
 }
-.icon_f054bd {
-  @extend %threadChatIcon !optional;
-}
-.jump__5126c {
-  @extend %threadJumpButton !optional;
-}
-.container__9271d {
-  @extend %threadEmbed !optional;
-}
-.cta__9271d {
-  @extend %threadCTA !optional;
-}
 .spine__5b40b {
   @extend %threadChannelConnector !optional;
 }
@@ -4389,9 +4406,6 @@ pre {
 }
 .list_c441f0 {
   @extend %threadModalList !optional;
-}
-.hasThread_c19a55 {
-  @extend %messageHasThread !optional;
 }
 .cozy_c19a55 {
   @extend %cozy !optional;
@@ -4542,6 +4556,9 @@ pre {
 }
 .inputField_a0c54f {
   @extend %phoneInputField !optional;
+}
+.popoutList__92efc {
+  @extend %phoneInputCountryCodePopout !optional;
 }
 .maskBackground_d4ced7 {
   @extend %typingStickerRecommendationHover !optional;
@@ -4858,57 +4875,6 @@ pre {
 .heading-sm\/medium_cf4812 {
   @extend %headingSmallMedium !optional;
 }
-.directoryContainer_da3f59 {
-  @extend %directoryContainer !optional;
-}
-.category_d7acc7 {
-  @extend %directoryCategory !optional;
-}
-.card_e90143 {
-  @extend %directoryCard !optional;
-}
-.container_d9c848 {
-  @extend %directoryListCard !optional;
-}
-.container_f9d8eb {
-  @extend %directoryNewToApps !optional;
-}
-.clickable_d9c848 {
-  @extend %directoryCardClickable !optional;
-}
-.container_bf1c84 {
-  @extend %directoryFooter !optional;
-}
-.search_aabd24 {
-  @extend %directorySearchBar !optional;
-}
-.category_fa8ebf.activeCategory_fa8ebf {
-  @extend %directorySearchCategoryActive !optional;
-}
-.category_d169f5 {
-  @extend %directoryAppCategory !optional;
-}
-.card__6faf3 {
-  @extend %directoryAppSupportServer !optional;
-}
-.list_e0307d {
-  @extend %directoryAppCommandList !optional;
-}
-.commandName_e0307d {
-  @extend %directoryAppCommand !optional;
-}
-.cardHeader_a11d84 {
-  @extend %directoryAppPremiumCardHeader !optional;
-}
-.benefitsContainer_a11d84 {
-  @extend %directoryAppPremiumContainer !optional;
-}
-.list__83c7c {
-  @extend %directoryAppPermissionList !optional;
-}
-.intentsContainer_f6d180 {
-  @extend %directoryAppIntentList !optional;
-}
 .picker__09f65 {
   @extend %soundboard !optional;
 }
@@ -5012,10 +4978,10 @@ pre {
   @extend %customizeChannelsHeader !optional;
 }
 .tabBar__0b563 {
-  @extend %customizeChannelsHeaderBar !optional;
+  @extend %customizeChannelsTabBar !optional;
 }
 .prompt__5d7c9 {
-  @extend %customizeChannelsPrompt !optional;
+  @extend %customizeChannelsCard !optional;
 }
 .selectValuePill__05934 {
   @extend %customizeChannelsPill !optional;
@@ -5270,9 +5236,6 @@ pre {
 }
 .selected_d5ae15 {
   @extend %channelSettingsRoleDropdownSelected !optional;
-}
-.defaultColor_e9e35f {
-  @extend %defaultColor !optional;
 }
 .container__024d4 {
   @extend %addServerContainer !optional;
